@@ -1,0 +1,32 @@
+{
+  "name": "@xspecs/storybook-addon",
+  "version": "1.0.0",
+  "description": "XSpecs Storybook integration addon",
+  "main": "register.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xolvio/xspecs-storybook-addon.git"
+  },
+  "keywords": [
+    "xspecs",
+    "storybook",
+    "addon",
+    "tests",
+    "cucumber",
+    "gherkin",
+    "BDD",
+    "unit",
+    "xolvio",
+    "xolv.io",
+    "xspecs.io"
+  ],
+  "author": "Xolv.io",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xolvio/xspecs-storybook-addon/issues"
+  },
+  "homepage": "https://github.com/xolvio/xspecs-storybook-addon#readme"
+}
