@@ -21,29 +21,29 @@ class XSpecsStorybookPanel extends React.Component {
     });
   }
 
-  getStoryGroupName = () => {
+  getStoryGroupName() {
     const storyNameParts = this.state.storyName.split("--");
     return storyNameParts.length >= 1
       ? storyNameParts[0]
       : "unknownStorybookStory";
-  };
+  }
 
-  getXSpecsPath = () => {
+  getXSpecsPath() {
     return this.props.xspecsUrl;
-  };
+  }
 
-  getLoginToXSpecsUrl = () => {
+  getLoginToXSpecsUrl() {
     return this.props.loginToXSpecsUrl;
-  };
+  }
 
-  getXSpecsEmbedUrl = () => {
+  getXSpecsEmbedUrl() {
     const xspecsIframeUnsafeUrl = `${this.getXSpecsPath()}/storybookEmbed/${this.getStoryGroupName()}?loginToXSpecsUrl=${this.getLoginToXSpecsUrl()}`;
     return encodeURI(xspecsIframeUnsafeUrl);
-  };
+  }
 
-  getIframeStyle = () => {
+  getIframeStyle() {
     return 'style="border: 0; max-width: 900px; height: 100%; width: 100%;"';
-  };
+  }
 
   render() {
     const fullHeightStyle = {
