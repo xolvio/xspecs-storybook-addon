@@ -1,10 +1,11 @@
 {
   "name": "@xspecs/storybook-addon",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "XSpecs Storybook integration addon",
   "main": "register.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rm -rf dist && babel src -d dist"
   },
   "repository": {
     "type": "git",
@@ -28,5 +29,20 @@
   "bugs": {
     "url": "https://github.com/xolvio/xspecs-storybook-addon/issues"
   },
-  "homepage": "https://github.com/xolvio/xspecs-storybook-addon#readme"
+  "homepage": "https://github.com/xolvio/xspecs-storybook-addon#readme",
+  "dependencies": {
+    "@storybook/addons": "^5.3.14",
+    "@storybook/components": "^5.3.14",
+    "@storybook/core-events": "^5.3.14",
+    "core-js": "^3.0.1"
+  },
+  "peerDependencies": {
+    "react": "*"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.0.0",
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/preset-react": "^7.0.0"
+  }
 }
