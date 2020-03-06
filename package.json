@@ -1,6 +1,6 @@
 {
   "name": "@xspecs/storybook-addon",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "XSpecs Storybook integration addon",
   "main": "register.js",
   "files": [
@@ -9,7 +9,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "rm -rf dist && babel src -d dist",
-    "publish": "npm run build && npm publish --access public"
+    "buildAndPublish": "npm run build && npm publish --access public"
   },
   "repository": {
     "type": "git",
