@@ -9,7 +9,7 @@ yarn add @xspecs/storybook-addon --dev
 
 2. Add the addon package to storybook main.js config file:
 ```
-  module.exports = {
+module.exports = {
   stories: ['...'],
   addons: ['...', '@xspecs/storybook-addon'],
 };
