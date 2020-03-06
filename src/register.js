@@ -79,7 +79,6 @@ function getLoginToXSpecsUrl(api) {
 }
 
 addons.register(ADDON_ID, (api) => {
-  console.log('PINGWING: 82 ADDON' );
   const render = ({ active, key }) => (
     <AddonPanel active={active} key={key}>
       <XSpecsStorybookPanel
